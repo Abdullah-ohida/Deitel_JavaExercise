@@ -38,6 +38,7 @@ public class BinaryNumberToDecimal {
             while (anyNumber != 0){
                 reminder = (int)(anyNumber % 10);
                 rev= (int)(Math.pow(base, power++)) * reminder + decimalValue;
+                System.out.printf("base = (%d * %d) * %d + %d = %d", base, power, reminder, decimalValue, decimalValue);
                 decimalValue = rev;
                 anyNumber = anyNumber / 10;
             }
